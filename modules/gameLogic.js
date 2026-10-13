@@ -2,7 +2,7 @@
 class GameLogic {
     constructor(gameBoard) {
         this.gameBoard = gameBoard;
-        this.currentPlayer = "T";
+        this.currentPlayer = "X";
         this.gameOver = false;
         this.turnCount = 0;
     }
@@ -61,7 +61,7 @@ class GameLogic {
     }
 
     switchPlayer() {
-        this.currentPlayer = this.currentPlayer === "T" ? "O" : "T";
+        this.currentPlayer = this.currentPlayer === "X" ? "O" : "X";
     }
 }
 
